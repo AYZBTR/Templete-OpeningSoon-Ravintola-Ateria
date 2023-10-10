@@ -1,0 +1,53 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    background-color: orange;
+}
+h1 {
+  font-size: 3rem; 
+  white-space: nowrap; 
+  overflow: hidden; /* Hide overflowing text */
+  animation:moveLeftToRight 10s linear infinite; 
+}  
+ @keyframes moveLeftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  } 
+
+  .Banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .Img{
+    width: 695px;
+    height: 900px;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 600px) {
+    .Img{
+      height: 600px;
+      max-width: max-content;
+    } 
+    h1{
+      font-size: 30px; 
+    }
+}
+
+
+
+ 
+
+  
+  
